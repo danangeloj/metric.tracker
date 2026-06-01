@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#0f1117">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Metrics">
+<meta name="description" content="Track daily messaging metrics with easy increment/decrement counters.">
+<title>Metric Tracker</title>
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <div class="app-title">metric<span>.</span>track</div>
+    <div class="full-date" id="fullDate"></div>
+  </div>
+  <div class="day-nav">
+    <button class="day-btn" id="prevDay" title="Previous day"></button>
+    <div class="day-label" id="dayLabel">Today</div>
+    <button class="day-btn" id="nextDay" title="Next day" disabled></button>
+  </div>
+</div>
+
+<div class="scroll-area" id="metricsList"></div>
+
+<div class="bottom-panel">
+  <div class="add-row">
+    <input class="add-input" type="text" id="newMetricInput" placeholder="Add a metric…" maxlength="40" autocomplete="off" />
+    <button class="add-btn" id="addMetricBtn">+ Add</button>
+  </div>
+  <div class="footer-row">
+    <div>
+      <div class="total-label">Total today</div>
+      <div class="total-val" id="totalCount">0</div>
+    </div>
+    <div class="actions">
+      <button class="text-btn export" id="exportBtn">Export CSV</button>
+      <button class="text-btn reset" id="resetBtn">Reset</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
