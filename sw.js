@@ -1,4 +1,4 @@
-const CACHE = 'metric-tracker-v1';
+const CACHE = 'metric-tracker-v1.1';
 const ASSETS = [
   './',
   './index.html',
