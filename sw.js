@@ -1,10 +1,10 @@
 const CACHE = 'metric-tracker-v1';
 const ASSETS = [
-  '/',
-  '/index.html',
-  '/app.js',
-  '/style.css',
-  '/manifest.json',
+  './',
+  './index.html',
+  './app.js',
+  './style.css',
+  './manifest.json',
   'https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;800&display=swap'
 ];
 
